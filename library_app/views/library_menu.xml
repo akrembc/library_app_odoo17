@@ -1,0 +1,28 @@
+<odoo>
+
+  <!-- Library App Menu -->
+  <menuitem id="menu_library" name="Library" />
+
+  <!-- Action to open the Book list -->
+  <record id="action_library_book" model="ir.actions.act_window">
+    <!-- name of action used as description of the presented menu / sub-menu -->
+    <field name="name">Library Books</field>
+    <field name="res_model">library.book</field>
+    <field name="view_mode">tree,form</field>
+    <!-- my try ... for filter_active to be set by default in search bar -->
+    <!-- <field name="context">{'search_default_filter_active': True}</field> -->
+  </record>
+
+  <!-- Menu item to open the Book list -->
+  <menuitem id="menu_library_book"
+    name="Books"
+    parent="menu_library"
+    action="action_library_book"
+  />
+  
+  <menuitem id="menu_library_configuration"
+    name="Configuration"
+    parent="menu_library"
+  />
+
+</odoo>

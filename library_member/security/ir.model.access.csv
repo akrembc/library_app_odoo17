@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_member_user,Member User Access,model_library_member,library_app.library_group_user,1,1,1,0
+access_member_manager,Member Manager Access,model_library_member,library_app.library_group_manager,1,1,1,1
+access_modal_user,Modal User Access,model_library_modal,library_app.library_group_user,1,1,1,0
+access_modal_manager,Modal Manager Access,model_library_modal,library_app.library_group_manager,1,1,1,1

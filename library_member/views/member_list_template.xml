@@ -1,0 +1,15 @@
+<odoo>
+    <template id="member_list_template" name="Member List">
+        <div id="wrap" class="container">
+            <h1>Members</h1>
+            <t t-foreach="members" t-as="member">
+                <h3>one member</h3>
+                <div class="row">
+                    <span t-field="member.name" />,
+                    <span t-field="member.card_number" />,
+                    <span t-field="member.email" />
+                </div>
+            </t>
+        </div>
+    </template>
+</odoo>
